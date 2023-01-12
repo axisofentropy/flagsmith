@@ -55,6 +55,10 @@ jobs:
         run: |
           FLAGSMITH_IMAGE=${{ needs.build-flagsmith.outputs.tags }}
           export FLAGSMITH_IMAGE
+          GH_CLIENT_ID=${{ secrets.GH_CLIENT_ID }}
+          export GH_CLIENT_ID
+          GH_CLIENT_SECRET=${{ secrets.GH_CLIENT_SECRET }}
+          export GH_CLIENT_SECRET
           # Render simple template from environment variables.
           envsubst < docker-compose.uffizzi.yml > docker-compose.rendered.yml
           cat docker-compose.rendered.yml

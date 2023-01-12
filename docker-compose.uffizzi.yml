@@ -44,6 +44,9 @@ services:
             ENABLE_ADMIN_ACCESS_USER_PASS: 'true'
             DJANGO_SECRET_KEY: '**SoMeTeMpOrArYsEcReT!!'
 
+            GITHUB_CLIENT_ID: "${GH_CLIENT_ID}"
+            GITHUB_CLIENT_SECRET: "${GH_CLIENT_SECRET}"
+
             ENV: dev # set to "prod" in production.
 
             # For more info on configuring InfluxDB - https://docs.flagsmith.com/deployment/overview#influxdb
