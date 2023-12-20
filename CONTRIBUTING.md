@@ -14,4 +14,4 @@ suggesting the next steps.
 - If you've changed APIs, update the documentation.
 - Keep the code style (indents, wrapping) consistent.
 - If your PR involves a lot of commits, squash them using `git rebase -i` as this makes it easier for us to review.
-- Keep lines under 80 characters.
+- Keep lines under 80 characters long.
